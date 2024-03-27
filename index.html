@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">What's your favorite ? ( Valorant Edition ) </h1>
+        <p id="description" class="description text-center">
+            This survey identifies the most picked gun, map, and agent based on your preference in Valorant.
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="..."
+            required
+          />
+        </div>
+        
+        <div class="form-group">
+            <label id="name-label" for="name">In Game Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="..."
+              required
+            />
+          </div>
+
+        <div class="form-group">
+          <label id="email-label" for="email">Gmail</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="..."
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            > What's highest score in Firing range (HARD mode)<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="13"
+            max="99"
+            class="form-control"
+            placeholder="..."
+          />
+        </div>
+        <div class="form-group">
+          <p>Which role do you like playing more?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select your preferred role</option>
+            <option value="student">Duelist</option>
+            <option value="job">Controller</option>
+            <option value="learner">Initiator</option>
+            <option value="preferNo">Sentinel</option>
+            <option value="other">Flex</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>What's your peak rank?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="Rochelle"
+              type="radio"
+              class="input-radio"
+              checked
+            />Iron</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="Nick"
+              type="radio"
+              class="input-radio"
+            />Bronze</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="Coach"
+              type="radio"
+              class="input-radio"
+            />Silver</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="Ellis"
+              type="radio"
+              class="input-radio"
+            />Gold</label
+          >
+
+        <label>
+            <input
+              name="user-recommend"
+              value="Zoey"
+              type="radio"
+              class="input-radio"
+              checked
+            />Platinum</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="Louis"
+              type="radio"
+              class="input-radio"
+            />Diamond</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="Francis"
+              type="radio"
+              class="input-radio"
+            />Ascendant</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="Bill"
+              type="radio"
+              class="input-radio"
+            />Immortal</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="Radiant"
+              type="radio"
+              class="input-radio"
+            />Radiant</label
+          >
+
+        </div>
+
+        <div class="form-group">
+          <p>Which agent do you often prefer to play?</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="Brimstone">Brimstone</option>
+            <option value="Viper">Viper</option>
+            <option value="Omen">Omen</option>
+            <option value="KJ">Killjoy</option>
+            <option value="CY">Cypher</option>
+            <option value="SOVA">Sova</option>
+            <option value="SG">Sage</option>
+            <option value="Phoenix">Phoenix</option>
+            <option value="Jett">Jett</option>
+            <option value="Reyna">Reyna</option>
+            <option value="Raze">Raze</option>
+            <option value="Breach">Breach</option>
+            <option value="Skye">Skye</option>
+            <option value="Yoru">Yoru</option>
+            <option value="Astra">Astra</option>
+            <option value="Kay/o">Kay/o</option>
+            <option value="Chamber">Chamber</option>
+            <option value="Neon">Neon</option>
+            <option value="Fade">Fade</option>
+            <option value="Harbor">Harbor</option>
+            <option value="Gekko">Gekko</option>
+            <option value="Deadlock">Deadlock</option>
+            <option value="Iso">Iso</option>
+            <option value="Clove">Clove</option>
+            
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            Which maps are your go-to favorites to play on regularly?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="NoMercy"
+              type="checkbox"
+              class="input-checkbox"
+            />Haven</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="CrashCourse"
+              type="checkbox"
+              class="input-checkbox"
+            />Ascent</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="DeathToll"
+              type="checkbox"
+              class="input-checkbox"
+            />Bind</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="DeadAir"
+              type="checkbox"
+              class="input-checkbox"
+            />Split</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="BloodHarvest"
+              type="checkbox"
+              class="input-checkbox"
+            />Icebox</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="TheSacrifice"
+              type="checkbox"
+              class="input-checkbox"
+            />Fracture</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="DeadCenter"
+              type="checkbox"
+              class="input-checkbox"
+            />Pearl</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="ThePassing"
+              type="checkbox"
+              class="input-checkbox"
+            />Lotus</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="DarkCarnival"
+              type="checkbox"
+              class="input-checkbox"
+            />Sunset</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="SwampFever"
+              type="checkbox"
+              class="input-checkbox"
+            />The Range</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="HardRain"
+              type="checkbox"
+              class="input-checkbox"
+            />Breeze</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>What's your favorite bundle so far?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your best bundle here... (i.e Reaver, Prime, Gaia ...)"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+o
